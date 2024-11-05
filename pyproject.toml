@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "course-work-bd5"
+version = "0.1.0"
+description = ""
+authors = ["Maksim <maks.severgin80@gmail.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+prettytable = "^3.11.0"
+python-dotenv = "^1.0.1"
+psycopg2-binary = "^2.9.10"
+tqdm = "^4.66.6"
+
+
+[tool.poetry.scripts]
+search = "course_work5.cli.search_employers:run"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
